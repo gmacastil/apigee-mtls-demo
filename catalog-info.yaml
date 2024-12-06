@@ -1,17 +1,1 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: apigee-mtls-demo
-  description: Demo configuración mTLS desde Apigee a un Backend
-  annotations:
-    backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: gmacastil/apigee-mtls-demo
-    sonarqube.org/project-key: apigee-mtls-demo
-  tags:
-    - java
-    - springboot
-spec:
-  type: service
-  owner: gmacastil
-  lifecycle: production
-  system: dummy
+null
