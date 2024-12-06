@@ -1,1 +1,19 @@
-"apiVersion: backstage.io/v1alpha1\nkind: Component\nmetadata:\n  name: apigee-mtls-demo\n  description: Demo configuraci\u00f3n mTLS desde Apigee a un Backend\n  annotations:\n    backstage.io/techdocs-ref: dir:.\n    github.com/project-slug: gmacastil/apigee-mtls-demo\n    sonarqube.org/project-key: apigee-mtls-demo\n  tags:\n    - java\n    - apigee\n    - mtls\n    - backend\nspec:\n  type: service\n  owner: gmacastil\n  lifecycle: production\n  system: dummy"
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: apigee-mtls-demo
+  description: Demo configuración mTLS desde Apigee a un Backend
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: gmacastil/apigee-mtls-demo
+    sonarqube.org/project-key: apigee-mtls-demo
+  tags:
+    - java
+    - apigee
+    - mtls
+    - backend
+spec:
+  type: service
+  owner: gmacastil
+  lifecycle: production
+  system: dummy
