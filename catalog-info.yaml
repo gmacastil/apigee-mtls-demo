@@ -5,7 +5,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: gmacastil/apigee-mtls-demo
     sonarqube.org/project-key: apigee-mtls-demo
-  description: "Demo configuraci\xF3n mTLS desde Apigee a un Backend utilizando Java"
+  description: Demo configuración mTLS desde Apigee a un Backend utilizando Java
   name: apigee-mtls-demo
   tags:
   - java
