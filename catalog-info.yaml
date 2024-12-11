@@ -13,8 +13,6 @@ metadata:
   tags:
     - java
     - apigee
-    - mtls
-    - backend
 spec:
   type: service
   owner: gmacastil
@@ -33,8 +31,6 @@ metadata:
   tags:
     - java
     - apigee
-    - mtls
-    - backend
 spec:
   type: openapi
   owner: gmacastil
