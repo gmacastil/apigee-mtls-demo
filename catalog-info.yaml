@@ -1,19 +1,44 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  name: apigee-mtls-demo
+  description: Demo configuración mTLS desde Apigee a un Backend utilizando Java
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: gmacastil/apigee-mtls-demo
     sonarqube.org/project-key: apigee-mtls-demo
-  description: Demo configuración mTLS desde Apigee a un Backend utilizando Java
-  name: apigee-mtls-demo
+    backstage.io/kubernetes-id: apigee-mtls-demo
+    backstage.io/kubernetes-namespace: producto-digital
+    backstage.io/kubernetes-label-selector: 'app=apigee-mtls-demo'
   tags:
-  - java
-  - apigee
-  - mtls
-  - backend
+    - java
+    - apigee
+    - mtls
+    - backend
 spec:
-  lifecycle: production
-  owner: gmacastil
-  system: dummy
   type: service
+  owner: gmacastil
+  lifecycle: production
+  system: discovery
+  providesApis:
+    - apigee-mtls-demo-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: apigee-mtls-demo-api
+  description: Demo configuración mTLS desde Apigee a un Backend utilizando Java
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - apigee
+    - mtls
+    - backend
+spec:
+  type: openapi
+  owner: gmacastil
+  lifecycle: production
+  system: discovery
+  definition: 
+    $text: /docs/openapi.yaml
